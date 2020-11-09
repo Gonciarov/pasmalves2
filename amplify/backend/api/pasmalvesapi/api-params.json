@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/contact",
+            "lambdaFunction": "pasmalvesfunc",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/contact"
+        }
+    ],
+    "resourceName": "pasmalvesapi",
+    "apiName": "pasmalvesapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "pasmalvesfunc"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-pasmalves-dev-100658-authRole",
+        "unAuthRoleName": "amplify-pasmalves-dev-100658-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "pasmalvesfunc",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,311 @@
+body, html {
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #777;
+	font-weight: 400;
+	width: 100% !important;
+	height: 100% !important;
+}
+h2, h3, h4 {
+	font-family: 'Raleway', sans-serif;
+}
+h2 {
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+	font-weight: 800;
+	font-size: 36px;
+	color: #333;
+}
+h3 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #333;
+}
+h4 {
+	font-size: 18px;
+	color: #333;
+	font-weight: 600;
+}
+h5 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+}
+p {
+	font-size: 15px;
+}
+p.intro {
+	margin: 12px 0 0;
+	line-height: 24px;
+}
+a {
+	color: #608dfd;
+	font-weight: 400;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	color: #608dfd;
+}
+ul, ol {
+	list-style: none;
+}
+
+hr {
+	height: 2px;
+	width: 70px;
+	text-align: center;
+	position: relative;
+	background: #1E7A46;
+	margin-bottom: 20px;
+	border: 0;
+}
+/* Navigation */
+#menu {
+	padding: 15px;
+	transition: all 0.8s;
+}
+#menu.navbar-default {
+	background-color: #fff;
+	border-color: rgba(231, 231, 231, 0);
+	box-shadow: 0 0 10px rgba(0,0,0,0.15)
+}
+#menu a.navbar-brand {
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	color: #333;
+	text-transform: uppercase;
+}
+#menu .nav-elements {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #555;
+	font-size: 15px;
+	font-weight: 400;
+	padding: 8px 2px;
+	border-radius: 0;
+	margin: 9px 20px 0 0px;
+}
+
+
+
+/* About */
+
+#about {
+	padding: 100px 0;
+}
+#about h3 {
+	font-size: 22px;
+	margin: 0 0 20px 0;
+}
+#about h2 {
+	position: relative;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+#about img {
+  width: 450px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+	background: #fff;
+	border-right: 0;
+	box-shadow: 0 0 50px rgba(0,0,0,0.06);
+}
+#about p {
+	line-height: 24px;
+	margin: 30px 0;
+}
+
+/* Header */
+
+#header {
+  text-align: center;
+}
+
+.resize {
+  max-width: 100%;
+}
+
+.intro {
+	display: table;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+	padding: 0;
+	background: url(./truck.jpg) center center no-repeat;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.intro .overlay {
+	background: rgba(0,0,0,0.2);
+}
+.intro h1 {
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 54px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.intro h1 span {
+	font-weight: 800;
+	color: #5ca9fb;
+}
+.intro p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+header .intro-text {
+	padding-top: 350px;
+	padding-bottom: 200px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+/* Features Section */
+#features {
+	padding: 100px 0;
+	background: #f6f6f6;
+}
+#features i.fa {
+	font-size: 38px;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	padding: 30px 0;
+	border-radius: 50%;
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+}
+
+/* Contact */
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.inline {
+  display: inline;
+  vertical-align: top;
+}
+
+
+#contact {
+	padding: 100px 0 60px 0;
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	color: rgba(255,255,255,.75);
+}
+#contact .section-title {
+	margin-bottom: 40px;
+}
+#contact .section-title p {
+	font-size: 16px;
+}
+#contact h2 {
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+#contact .section-title h2::after {
+	position: absolute;
+	content: "";
+	background: rgba(255,255,255,.3);
+	height: 4px;
+	width: 60px;
+	bottom: 0;
+	left: 30px;
+}
+#contact h3 {
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	padding-bottom: 20px;
+	font-weight: 400;
+}
+#contact form {
+	padding-top: 20px;
+}
+#contact .text-danger {
+	color: #cc0033;
+	text-align: left;
+}
+#contact .btn-custom {
+	margin: 30px 0;
+	background: transparent;
+	border: 2px solid #fff;
+}
+#contact .btn-custom:hover {
+	color: #1f386e;
+	background: #fff;
+}
+label {
+	font-size: 12px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+}
+#contact .form-control {
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #444;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ddd;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+#contact .form-control:focus {
+	border-color: #999;
+	outline: 0;
+	-webkit-box-shadow: transparent;
+	box-shadow: transparent;
+}
+.form-control::-webkit-input-placeholder {
+color: #777;
+}
+.form-control:-moz-placeholder {
+color: #777;
+}
+.form-control::-moz-placeholder {
+color: #777;
+}
+.form-control:-ms-input-placeholder {
+color: #777;
+}
+#contact .contact-item {
+	margin: 0 0;
+}
+#contact .contact-item span {
+	color: rgba(255,255,255,1);
+	margin-bottom: 10px;
+	display: block;
+}
+#contact .contact-item i.fa {
+	margin-right: 10px;
+}
+
+
+
+

@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "pasmalves"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-gfq2mzt8hze8"
+s3_prefix = "pasmalves"
+region = "eu-west-2"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "DynamoDBTableStreamARN=\"arn:aws:dynamodb:eu-west-2:015824586188:table/pasmalves-dev/stream/2020-11-07T12:18:29.239\" FromMailIdentityName=\"goncharov20061@yandex.ru\" ToMailIdentityName=\"goncharov20061@yandex.ru\""

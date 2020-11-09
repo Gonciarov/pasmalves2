@@ -1,0 +1,5 @@
+{
+    "tableName": "pasmalves",
+    "partitionKeyName": "id",
+    "partitionKeyType": "S"
+}
