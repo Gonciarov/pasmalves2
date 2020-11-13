@@ -107,7 +107,7 @@ const Contact = () => {
         
                   <label>
                     <input id="gdpr" className="gdpr" type="checkbox" name="gdpr" onChange={e => setChecked(!checked)}/>
-                      <span>I am 18+ and agree to <a href='/#/terms' className="tac">Terms and Conditions</a></span>
+                      <span>I am 18+ and agree to <a href='/terms' className="tac">Terms and Conditions</a></span>
                   </label>
 
                   <div id="success"></div>
