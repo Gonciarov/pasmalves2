@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import './App.css';
 
@@ -7,7 +7,9 @@ import {Container, Button, Form} from 'react-bootstrap';
 import { API } from "aws-amplify";
 import awsExports from './aws-exports';
 Amplify.configure(awsExports);
+
 async function addContact() {
+  
   const data = {
     body: {
       name: formState.name,
@@ -23,6 +25,8 @@ async function addContact() {
 }
 
 const formState = { name: '', email: '', message: '' };
+
+
 
 function updateFormState(key, value) {
   formState[key] = value;
@@ -60,6 +64,7 @@ export default Contact; */
 
 
 const Contact = () => {
+  const [checked, setChecked] = useState(false);
     return (
       <div>
         <div id="contact">
@@ -98,10 +103,22 @@ const Contact = () => {
                   <Form.Label>Message</Form.Label>
                     <Form.Control as="textarea" rows={3} placeholder="Message" onChange={e => updateFormState('message', e.target.value)} />
                     </Form.Group>
-                    <p className="help-block text-danger"></p>
                   </div>
+        
+                  <label>
+                    <input id="gdpr" className="gdpr" type="checkbox" name="gdpr" onChange={e => setChecked(!checked)}/>
+                      <span>I am 18+ and agree to <a href='/terms' className="tac">Terms and Conditions</a></span>
+                  </label>
+
                   <div id="success"></div>
-                  <Button onClick={addContact} className="btn btn-custom btn-lg">Send a message</Button>
+
+                  <div>
+                    { checked ?
+                      <Button onClick={addContact} className="btn btn-custom btn-lg">Send a message</Button>
+                      : <Button className="btn btn-custom btn-lg">Send a message</Button>
+                    }
+                  </div>
+                  
                 </form>
               </div>
             </div>

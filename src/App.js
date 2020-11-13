@@ -4,6 +4,7 @@ import Navigation from './navigation';
 import Contact from './contact';
 import About from './about';
 import Header from './header';
+import Main from './main';
 
 const App = () => {
 
@@ -11,10 +12,9 @@ const App = () => {
     return (
       <div>
         
-        <Navigation />
-        <Header />
-        <About />
-        <Contact />
+        
+        <Main />
+
       </div>
     )
 }
