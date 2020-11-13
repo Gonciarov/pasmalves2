@@ -7,7 +7,7 @@ const Navigation = () => {
         <nav id="menu" className="navbar navbar-default navbar-fixed-top"> 
         <div className="container">
           <div className="navbar-header">
-            <a className="navbar-brand page-scroll" href="#page-top">
+            <a className="navbar-brand page-scroll" href="/">
             <i class="fas fa-truck"></i> | UAB PASMALVĖS
             </a>{" "}
           </div>
