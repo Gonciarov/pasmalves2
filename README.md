@@ -1,6 +1,6 @@
 # pasmalves
 
-Landing page for UAB Pasmalves, cargo transportation company (Lithuania) with working contact form, [published](www.pasmalves.lt).
+Landing page for UAB Pasmalves, cargo transportation company (Lithuania) with working contact form, [published](https://pasmalves.lt).
 
 ## tech
 
