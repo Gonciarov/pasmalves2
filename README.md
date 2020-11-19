@@ -1,6 +1,6 @@
 # pasmalves
 
-Landing page for UAB Pasmalves, cargo transportation company (Lithuania). Deployed [here](https://agitated-haibt-62666e.netlify.app/), ready to be reviewed by more experienced developer, populated with newer pics and texts and sent to production.
+Landing page for UAB Pasmalves, cargo transportation company (Lithuania) with working contact form, [published](www.pasmalves.lt).
 
 ## tech
 
